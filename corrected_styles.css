@@ -1,0 +1,200 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Moderustic', serif;
+    background-color: #FFFFFF;
+}
+
+/* Contenido principal */
+.additional-content, .about-content {
+    max-width: 800px; /* Ajuste de ancho máximo para ambas secciones */
+    margin: 0 auto;   /* Centramos el contenido */
+    padding: 20px;    /* Espaciado interno igual para ambas secciones */
+    text-align: center; /* Texto justificado para ambos bloques */
+    color: #90DBF4;
+    font-size: 30px;
+}
+
+.additional-content p, .about-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 22px; /* Tamaño de texto igualado para ambas secciones */
+    color: #000000;
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    line-height: 1.6; /* Mejora la legibilidad aumentando el interlineado */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #000000;
+    top: 0;
+    width: 100%;
+    padding: 20px 20px;
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Animación de la imagen al pasar el cursor */
+.logo:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+/* Menú de navegación */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-menu li {
+    margin-right: 30px;
+}
+
+.nav-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Moderustic', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    transition: color 0.3s ease;
+}
+
+/* Otros estilos */
+.divider {
+    width: 60%;
+    margin: 0 auto 20px auto;
+    border: none;
+    border-top: 2px solid #C8EDFA;
+}
+
+.footer {
+    background-color: #90DBF4;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Animación de la imagen del pie de página al pasar el cursor */
+.footer-logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.footer p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Línea centrada debajo de los títulos */
+.divider {
+    width: 60%;
+    margin: 10px auto; /* Coloca la línea justo debajo del título */
+    border: none;
+    border-top: 2px solid #90DBF4;
+}
+
+/* Animación de la imagen */
+.additional-content img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.additional-content img:hover {
+    transform: scale(1.05); /* Escala la imagen ligeramente */
+    filter: brightness(1.1); /* Aumenta el brillo */
+}
+
+.photo-carousel img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-height: 500px; /* Limita la altura máxima de las imágenes */
+    object-fit: cover; /* Ajusta cómo las imágenes se escalan dentro del contenedor */
+}
+
+/* Estilo para el título Portfolio */
+h1:hover {
+    color: #F1C0E8;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para el título Scenarios */
+h2:hover {
+    color: #F1C0E8;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilos para los rectángulos debajo de la barra de navegación */
+.rectangulo {
+    width: 100%;
+    height: 20px; /* Ajustar el grosor vertical según tus necesidades */
+}
+
+.rectangulo1 {
+    background-color: #90DBF4;
+}
+
+.rectangulo2 {
+    background-color: #C8EDFA;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Animación de los enlaces del menú al pasar el cursor */
+.nav-menu a:hover {
+    color: #90DBF4;
+}
+
+.carousel-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px;
+    width: 100%;
+}
